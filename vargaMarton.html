@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varga Márton</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+        <label for="titulus">Tisztelt </label>
+        <select name="titulus" id="titulus">
+            <option value="dr">Dr. </option>
+            <option value="idosebb">Id. </option>
+            <option value="ifj">Ifj. </option>           
+            <option value="ozv">özv. </option>                     
+        </select>
+
+        <label for="inputNev"></label>
+        <input type="text" name="inputNev" id="inputNev" required placeholder="Név:" max="50"/><br>
+
+        <label for="jelszo">Jelszó:</label>
+        <input type="password" name="jelszo" id="jelszo" min="6"/><br>
+
+        <select name="nem" id="nem">
+            <option value="no">Nő </option>
+            <option value="ferfi">Férfi </option>
+            <option value="egyeb">egyéb </option>      
+        </select><br>
+
+        <label for="szuletesidatum">Születési dátum:</label>
+        <input type="date" name="szuletesidatum" id="szuletesidatum" min="1900-01-01"/><br>
+
+        <label for="emailAddress">Email cím:</label>
+        <input type="email" name="emailAddress" id="emailAddress" /><br>
+
+        <textarea name="kozlendo" id="kozlendo" cols="40" rows="5" placeholder="Egyéb közlendő:"></textarea><br>
+
+        <input type="submit" name="feldolgozasIndul" id="feldolgozasIndul" />
+        <input type="reset">
+    </fieldset>
+    </form>
+</body>
+</html>
